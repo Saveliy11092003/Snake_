@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="515.0" style="-fx-background-color: #0bfade;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nsu.ccfit.ru.trushkov.game.controller.impl.GUIJoinMenuControllerImpl">
+    <children>
+        <Accordion />
+        <Button layoutX="140" layoutY="224.0" mnemonicParsing="false" onAction="#joinGame" prefHeight="41.0" prefWidth="260.0" style="-fx-background-color: #fa1010;" stylesheets="@../style/login.css" text="Join the game" textFill="#fcf9f9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+      <TextField fx:id="namePlayer" layoutX="130" layoutY="92.0" prefHeight="41.0" prefWidth="282.0" promptText="Name player" style="-fx-background-color: #2A363F; -fx-border-color: #99c223; -fx-border-radius: 4;" stylesheets="@../style/login.css" />
+      <ChoiceBox fx:id="choiceRole" layoutX="130" layoutY="152.0" prefHeight="41.0" prefWidth="282.0" style="-fx-border-color: #0bfade; -fx-border-radius: 4;" stylesheets="@../style/choicebox.css" />
+      <ImageView fitHeight="48.0" fitWidth="202.0" layoutX="230" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/snake_ins.png" />
+         </image>
+      </ImageView>
+      <Label text="" />
+      <Label fx:id="errorJoinGame" layoutX="56.0" layoutY="274.0" prefHeight="31.0" prefWidth="260.0" text="" />
+    </children>
+</AnchorPane>

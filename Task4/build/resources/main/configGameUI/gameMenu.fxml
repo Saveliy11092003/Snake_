@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="746.0" style="-fx-background-color: #2A363F;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nsu.ccfit.ru.trushkov.game.controller.impl.GUIMenuControllerImpl">
+    <children>
+        <TextField fx:id="namePlayer" layoutX="20.0" layoutY="94.0" prefHeight="41.0" prefWidth="282.0" promptText="Name player" style="-fx-background-color: #794c49; -fx-border-color: #0bfade; -fx-border-radius: 4;" stylesheets="@../style/login.css" />
+      <TextField fx:id="height" layoutX="20.0" layoutY="205.0" prefHeight="41.0" prefWidth="282.0" promptText="Height" style="-fx-background-color: #794c49; -fx-border-color: #0bfade; -fx-border-radius: 4;" stylesheets="@../style/login.css" text="20" />
+      <ListView fx:id="gamesInfo" layoutX="380.0" layoutY="57.0" onMouseClicked="#joinToGame" prefHeight="412.0" prefWidth="327.0" style="-fx-background-color: #2a363f; -fx-border-color: #0bfade; -fx-border-radius: 4;" stylesheets="@../style/gamesInfo.css" />
+      <Accordion />
+      <TextField fx:id="countFood" layoutX="20.0" layoutY="260.0" prefHeight="41.0" prefWidth="282.0" promptText="Count food" style="-fx-background-color: #794c49; -fx-border-color: #0bfade; -fx-border-radius: 4;" stylesheets="@../style/login.css" text="5" />
+      <TextField fx:id="delay" layoutX="20.0" layoutY="315.0" prefHeight="41.0" prefWidth="282.0" promptText="Delay" style="-fx-background-color: #794c49; -fx-border-color: #0bfade; -fx-border-radius: 4;" stylesheets="@../style/login.css" text="200" />
+      <Button layoutX="20.0" layoutY="396.0" mnemonicParsing="false" onAction="#createGame" prefHeight="41.0" prefWidth="260.0" style="-fx-background-color: #cd2957;" stylesheets="@../style/login.css" text="Create the game" textFill="#fcf9f9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="width" layoutX="20.0" layoutY="149.0" prefHeight="41.0" prefWidth="282.0" promptText="Weight" style="-fx-background-color: #794c49; -fx-border-color: #0bfade; -fx-border-radius: 4;" stylesheets="@../style/login.css" text="20" />
+      <TextField fx:id="nameGame" layoutX="20.0" layoutY="39.0" prefHeight="41.0" prefWidth="282.0" promptText="Name game" style="-fx-background-color: #794c49; -fx-border-color: #0bfade; -fx-border-radius: 4;" stylesheets="@../style/login.css" text="Game1" />
+      <Pane layoutX="380.0" layoutY="28.0" prefHeight="29.0" prefWidth="328.0" style="-fx-border-color: #0bfade; -fx-border-radius: 4;" stylesheets="@../style/login.css">
+         <children>
+            <Line endX="250" endY="4.0" layoutX="-86.0" layoutY="25.0" startX="250" startY="-23.138681411743164" stroke="#465058" strokeWidth="2.0" />
+            <Text fill="#9a9999" layoutX="50" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-border-color: #0bfade;" text="Name game" wrappingWidth="90.73553848266602" />
+            <Text fill="#9a9999" layoutX="200" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-border-color: #0bfade;" text="Status" wrappingWidth="118.6855109652061" />
+         </children></Pane>
+    </children>
+</AnchorPane>
+

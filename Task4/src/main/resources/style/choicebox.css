@@ -1,0 +1,29 @@
+/* Фон выпадающего списка */
+.choice-box .arrow {
+    -fx-background-color:  #2A363F !important;
+}
+
+.choice-box {
+    -fx-background-color: #2A363F !important;
+}
+
+/* Фон выпадающего списка, когда выбор в развернутом состоянии */
+.choice-box .box {
+    -fx-background-color:  #2A363F !important;
+}
+
+/* Цвет текста в выпадающем списке */
+.choice-box .label {
+    -fx-text-fill: #2A363F !important;
+}
+
+/* Фон элемента списка */
+.choice-box .list-view {
+    -fx-background-color: #2A363F !important;
+}
+
+/* Выбранный элемент в выпадающем списке */
+.choice-box .list-cell:selected {
+    -fx-background-color: #FBFCFC !important;
+    -fx-text-fill: #FBFCFC !important;
+}
